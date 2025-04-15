@@ -1,0 +1,84 @@
+.bigcontainer{
+    height: 120vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    gap: 10vw;
+}
+.left{
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.right{
+    margin-top: 100px;
+    width: 45vw;
+}
+.name{
+    font-family: "Merriweather", serif;
+    font-size: 4rem;
+}
+.tag{
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+.heroimg{
+    height: 110vh;
+    width: 45vw;
+    object-fit: cover;
+}
+@media screen and (max-width: 1100px){
+    .left{
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        color: white;
+    }
+    .right{
+        width: 100vw;
+        position: relative;
+    }
+    .dark{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+}
+@media screen and (max-width: 600px){
+    .heroimg{
+        width: 100%;
+        height: auto;
+    }
+    .name{
+        font-size: 2.5rem;
+    }
+    .bigcontainer{
+        margin-top: 100px;
+        height: 50vh;
+    }
+    .tagcont{
+        padding-left: 0;
+        margin-top: 30px;
+    }
+    .bigcontainer{
+        margin-top: 0px;
+        height: 500px;
+    }
+    .name{
+        font-size: 2rem;
+    }
+    .tag{
+        font-size: 1rem;
+    }
+    .left{
+        height: 300px;
+    }
+}

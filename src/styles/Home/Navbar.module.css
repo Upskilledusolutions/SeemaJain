@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playwrite+HR+Lijeva:wght@100..400&display=swap');
+.bigcontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15%;
+    position: fixed;
+    top: 0;
+    width: 70%;
+    gap: 40%;
+    background-color: #017893;
+    z-index: 10;
+    color: white;
+}
+.menu{
+    display: none;
+}
+.link{
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.initials{
+    font-family: "Merriweather", serif;
+    font-size: 3.5rem;
+}
+.name{
+    font-size: 0.8rem;
+    letter-spacing: -1px;
+    width: max-content;
+}
+.list{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.olist{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+@media screen and (max-width: 1100px){
+    .bigcontainer{
+        padding: 10px 5vw;
+        width: 90vw;
+    }
+    .list{
+        position: absolute;
+        top: 80px;
+        left: 0;
+        padding: 50px 5%;
+        flex-direction: column;
+        font-size: 1.4rem;
+        gap: 30px;
+        width: 100vw;
+        background-color: white;
+        transition: 0.3s;
+    }
+    .olist{
+        position: absolute;
+        top: -800px;
+        left: 0;
+        padding: 50px 5%;
+        flex-direction: column;
+        font-size: 1.4rem;
+        gap: 30px;
+        width: 100vw;
+        background-color: white;
+        transition: 0.3s;
+    }
+    .menu{
+        color: white;
+        display: block;
+    }
+}
+@media screen and (max-width: 600px){
+    .initials{
+        font-size: 2.2rem;
+    }
+    .name{
+        font-size: 0.6rem;
+    }
+    .list{
+        margin-top: -5px;
+        padding: 20px 5%;
+    }
+    .link{
+        color: black;
+    }
+}
